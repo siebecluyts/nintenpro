@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            nintenpro mario kart stats
+        </title>
+        <link rel="stylesheet" href="../../styles.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="../../images/">
+    </head>
+    <body>
+        <style>
+            body {
+              background-image: url('background.png');
+              margin: 0%;
+            }
+            </style>
+        <h1>
+            nintenpro mario kart 8 deluxe
+        </h1>
+        <ul>
+            <li><a href="../../">home</a></li>
+            <li><a href="/../../about/">about</a></li>
+            <li>
+                <a href="../">games</a>
+                <!-- Dropdown content -->
+                <ul class="dropdown-content">
+                    <li><a href="/games/mariokart/">mario kart</a></li>
+                    <li><a href="../Bowser's Fury/">Bowser's Fury</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/play/">play with me</a>
+                <!-- Dropdown content -->
+                <ul class="dropdown-content">
+                    <li><a href="/play/mariokart/">mario kart</a></li>
+                    <li><a href="/play/mario3Dworld/">Super mario 3D world</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!-- Subscribe Button -->
+<button id="openPopupBtn">Subscribe to Newsletter</button>
+
+<!-- Popup Modal -->
+<div id="newsletterPopup" class="popup">
+    <div class="popup-content">
+        <span class="close">&times;</span>
+        <h2>Subscribe to our Newsletter</h2>
+        <p>Get the newest info on Nintenpro's game records!</p>
+
+        <!-- Embedded Google Form -->
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScWwyCGatclEQYl_2QTfoMvaat0_KOzHvb9VX9JpsBKASpdTQ/viewform?usp=sf_link" width="100%" height="500px" frameborder="0"></iframe>
+    </div>
+</div>
+
+<script>
+    // Get elements
+    const popup = document.getElementById("newsletterPopup");
+    const openPopupBtn = document.getElementById("openPopupBtn");
+    const closeBtn = document.getElementsByClassName("close")[0];
+
+    // Open popup when the button is clicked
+    openPopupBtn.onclick = function() {
+        popup.style.display = "flex";
+    }
+
+    // Close popup when the close button (x) is clicked
+    closeBtn.onclick = function() {
+        popup.style.display = "none";
+    }
+
+    // Close popup when clicking outside of the popup
+    window.onclick = function(event) {
+        if (event.target == popup) {
+            popup.style.display = "none";
+        }
+    }
+</script>
+        <h2>
+            Online vr
+        </h2>
+        <p>I have been online in mario kart for only a month, and was realy bad. In a few weeks I went from 1000 vr to 890. But now, that is changing. I was able to get back to 1000 vr in just 2 days.</p>
+        <h2>
+            Combo
+        </h2>
+        <p>
+            My combo is king boo, on mr scooty with azure rollers and paper glider.
+        </p>
+        <p>
+            Stats:
+            <br>
+            Miniturbo = 5.00
+            <br>
+            Speed (Ground) = 2.75
+            <br>
+            Speed (Water) = 4.00
+            <br>
+            Speed (Air) = 4.00
+            <br>
+            Speed (Hover) = 3.50
+            <br>
+            Acceleration = 4.75
+            <br>
+            Weight = 2.50
+            <br>
+            Handling (Ground) = 4.00
+            <br>
+            Handling (Water) = 3.50
+            <br>
+            Handling (Air) = 4.00
+            <br>
+            Handling (Hover) = 4.00
+            <br>
+            Traction = 3.75
+<br>
+            invincibility = 1.75
+            <br>
+
+        </p>
+        <br>
+        <h2>Tips</h2>
+        <p>To be better at mario kart, se a combo, like me, with high Acceleration and high mini turbo.</p>
+        <p>You can also watch some videos from Shortcat on youtube to learn more.</p>
+        <br>
+    </body>
+    <footer>
+        &#169;Nintenpro mario kart stats
+    </footer>
+</html>

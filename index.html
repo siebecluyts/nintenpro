@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            nintenpro home page
+        </title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    </head>
+    <body>
+        <style>
+            body {
+               background-color: rgb(1, 5, 71);
+            }
+        </style>
+        <h1>
+            Nintenpro
+        </h1>
+        <ul>
+            <li><a href="/">home</a></li>
+            <li><a href="/about/">about</a></li>
+            <li>
+                <a href="/games/">games</a>
+                <!-- Dropdown content -->
+                <ul class="dropdown-content">
+                    <li><a href="/games/mariokart/">mario kart</a></li>
+                    <li><a href="/games/Bowser's Fury/">Bowser's Fury</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/play/">play with me</a>
+                <!-- Dropdown content -->
+                <ul class="dropdown-content">
+                    <li><a href="/play/mariokart/">mario kart</a></li>
+                    <li><a href="/play/mario3Dworld/">Super mario 3D world</a></li>
+                </ul>
+            </li>
+        </ul>
+        <br>
+<!-- Subscribe Button -->
+<button id="openPopupBtn">Subscribe to Newsletter</button>
+
+<!-- Popup Modal -->
+<div id="newsletterPopup" class="popup">
+    <div class="popup-content">
+        <span class="close">&times;</span>
+        <h2>Subscribe to our Newsletter</h2>
+        <p>Get the newest info on Nintenpro's game records!</p>
+
+        <!-- Embedded Google Form -->
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScWwyCGatclEQYl_2QTfoMvaat0_KOzHvb9VX9JpsBKASpdTQ/viewform?usp=sf_link" width="100%" height="500px" frameborder="0"></iframe>
+    </div>
+</div>
+
+<script>
+    // Get elements
+    const popup = document.getElementById("newsletterPopup");
+    const openPopupBtn = document.getElementById("openPopupBtn");
+    const closeBtn = document.getElementsByClassName("close")[0];
+
+    // Open popup when the button is clicked
+    openPopupBtn.onclick = function() {
+        popup.style.display = "flex";
+    }
+
+    // Close popup when the close button (x) is clicked
+    closeBtn.onclick = function() {
+        popup.style.display = "none";
+    }
+
+    // Close popup when clicking outside of the popup
+    window.onclick = function(event) {
+        if (event.target == popup) {
+            popup.style.display = "none";
+        }
+    }
+</script>
+
+        <br>
+        <h2>
+            Who I am
+        </h2>
+        <br>
+        <p>I am a pro at nintendo switch games. I mostly plays games like mario kart, but im also good at other mario games.</p>
+        <br>
+        <h2>Send email</h2>
+        <div class="container">
+            <form action="message.php" method="post">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name.." required><br>
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name.." required><br>
+
+              <label for="email">email</label>
+              <input type="email" id="email" name="email" placeholder="Your email" required><br>
+          
+              <label for="subject">subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea><br>         
+              <label for="messgae">message</label>
+              <textarea id="message" name="message" placeholder="Write something.." style="height:200px" required></textarea><br>
+          
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+          
+        <script src="script.js"></script>
+    </body>
+    <footer>
+        &#169;Nintenpro
+    </footer>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            nintenpro play
+        </title>
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="/../images/favicon-32x32.png">
+    </head>
+    <body>
+        <style>
+            body {
+               background-color: rgb(1, 5, 71);
+            }
+        </style>
+        <h1>
+            Nintenpro play
+        </h1>
+        <ul>
+            <li><a href="../">home</a></li>
+            <li><a href="/../about/">about</a></li>
+            <li>
+                <a href="/games/">games</a>
+                <!-- Dropdown content -->
+                <ul class="dropdown-content">
+                    <li><a href="/games/mariokart/">mario kart</a></li>
+                    <li><a href="/games/Bowser's Fury/">Bowser's Fury</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="/play/">play with me</a>
+                <!-- Dropdown content -->
+                <ul class="dropdown-content">
+                    <li><a href="/play/mariokart/">mario kart</a></li>
+                    <li><a href="/play/mario3Dworld/">Super mario 3D world</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!-- Subscribe Button -->
+<button id="openPopupBtn">Subscribe to Newsletter</button>
+
+<!-- Popup Modal -->
+<div id="newsletterPopup" class="popup">
+    <div class="popup-content">
+        <span class="close">&times;</span>
+        <h2>Subscribe to our Newsletter</h2>
+        <p>Get the newest info on Nintenpro's game records!</p>
+
+        <!-- Embedded Google Form -->
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScWwyCGatclEQYl_2QTfoMvaat0_KOzHvb9VX9JpsBKASpdTQ/viewform?usp=sf_link" width="100%" height="500px" frameborder="0"></iframe>
+    </div>
+</div>
+
+<script>
+    // Get elements
+    const popup = document.getElementById("newsletterPopup");
+    const openPopupBtn = document.getElementById("openPopupBtn");
+    const closeBtn = document.getElementsByClassName("close")[0];
+
+    // Open popup when the button is clicked
+    openPopupBtn.onclick = function() {
+        popup.style.display = "flex";
+    }
+
+    // Close popup when the close button (x) is clicked
+    closeBtn.onclick = function() {
+        popup.style.display = "none";
+    }
+
+    // Close popup when clicking outside of the popup
+    window.onclick = function(event) {
+        if (event.target == popup) {
+            popup.style.display = "none";
+        }
+    }
+</script>
+        <br>
+    <h2>Games you can play against me</h2>
+    <button onclick="window.location.href='Mariokart/';">mario kart</button>
+    <button onclick="window.location.href='mario3Dworld/';">Super mario 3D world</button>
+    </body>
+    <footer>
+        &#169;Nintenpro
+    </footer>
+</html>
